@@ -1,0 +1,165 @@
+
+C:\Users\Lenovo>cd..
+
+C:\Users>cd..
+
+C:\>cd..
+
+C:\>cd D:
+D:\
+
+C:\>cd D:\45_Shirisha_BE
+
+C:\>cd D:\45_Shirisha_BE
+
+C:\>D:\45_Shirisha_BE
+'D:\45_Shirisha_BE' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>D:
+
+D:\45_Shirisha_BE>cd Test
+
+D:\45_Shirisha_BE\Test>git config --global user.name "shiri31"
+
+D:\45_Shirisha_BE\Test>git config --global user.email
+
+D:\45_Shirisha_BE\Test>git config --global user.email "shirisharapelli31@gmail.com"
+
+D:\45_Shirisha_BE\Test>git init
+Initialized empty Git repository in D:/45_Shirisha_BE/Test/.git/
+
+D:\45_Shirisha_BE\Test>git clone https://github.com/shiri31/Demo.git
+Cloning into 'Demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+D:\45_Shirisha_BE\Test>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Demo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\45_Shirisha_BE\Test>git add file1.txt
+fatal: pathspec 'file1.txt' did not match any files
+
+D:\45_Shirisha_BE\Test>cd Demo
+
+D:\45_Shirisha_BE\Test\Demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\45_Shirisha_BE\Test\Demo>git add file1.txt
+
+D:\45_Shirisha_BE\Test\Demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file1.txt
+
+
+D:\45_Shirisha_BE\Test\Demo>git commit -m "MyFirstCommit"
+[main c3dd27c] MyFirstCommit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+
+D:\45_Shirisha_BE\Test\Demo>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\45_Shirisha_BE\Test\Demo>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/shiri31/Demo.git'
+
+D:\45_Shirisha_BE\Test\Demo>git push -u origin https://github.com/shiri31/Demo.git
+fatal: invalid refspec 'https://github.com/shiri31/Demo.git'
+
+D:\45_Shirisha_BE\Test\Demo>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shiri31/Demo.git
+   0faf8e7..c3dd27c  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\45_Shirisha_BE\Test\Demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\45_Shirisha_BE\Test\Demo>git add file1.txt
+
+D:\45_Shirisha_BE\Test\Demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+
+
+D:\45_Shirisha_BE\Test\Demo>git commit -m "MySecondCommit"
+[main e2bab88] MySecondCommit
+ 1 file changed, 2 insertions(+)
+
+D:\45_Shirisha_BE\Test\Demo>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\45_Shirisha_BE\Test\Demo>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shiri31/Demo.git
+   c3dd27c..e2bab88  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\45_Shirisha_BE\Test\Demo>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 676 bytes | 6.00 KiB/s, done.
+From https://github.com/shiri31/Demo
+   e2bab88..5058192  main       -> origin/main
+Updating e2bab88..5058192
+Fast-forward
+ file2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+D:\45_Shirisha_BE\Test\Demo>
